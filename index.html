@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlyDance - Aprende a bailar y sal a vivirlo</title>
+    <meta name="description" content="OnlyDance: Aprende a bailar y sal a vivirlo. La primera plataforma donde no solo tomas clases... sino que sales a bailar con tu instructor en experiencias reales, sociales y seguras." />
+    <meta name="keywords" content="baile, salsa, bachata, instructor, Medellín, Colombia, experiencias sociales, aprender a bailar" />
+    <meta name="author" content="DondeBailo" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/DSBIcon.png?v=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/DSBIcon.png?v=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/DSBIcon.png?v=1" />
+    <link rel="mask-icon" href="/DSBIcon.png?v=1" color="#FB7185" />
+    <meta name="msapplication-TileImage" content="/DSBIcon.png?v=1" />
+    <meta name="msapplication-TileColor" content="#FB7185" />
+    <meta name="theme-color" content="#FB7185" />
+
+    <meta property="og:title" content="OnlyDance - Aprende a bailar y sal a vivirlo" />
+    <meta property="og:description" content="La primera plataforma donde no solo tomas clases... sino que sales a bailar con tu instructor en experiencias reales, sociales y seguras." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://onlydance.com" />
+    <meta property="og:image" content="/DSBIcon.png?v=1" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@DondeBailo" />
+    <meta name="twitter:image" content="/DSBIcon.png?v=1" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('ServiceWorker registrado con éxito:', registration.scope);
+            })
+            .catch((error) => {
+              console.log('Error al registrar el ServiceWorker:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

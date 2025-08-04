@@ -1,0 +1,13 @@
+/* Railway app configuration */
+
+/*.js
+  Content-Type: application/javascript
+
+/*.js.map
+  Content-Type: application/json
+
+/*.css
+  Content-Type: text/css
+
+/*
+  X-Content-Type-Options: nosniff
