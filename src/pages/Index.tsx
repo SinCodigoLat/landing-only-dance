@@ -192,41 +192,19 @@ const Index = () => {
 							</div>
 							<div className="flex items-center gap-2">
 								<Users className="w-4 h-4 text-blue-500" />
-								<span>+200 instructores</span>
+								<span>+Instructores experimentados</span>
 							</div>
 						</div>
 					</div>
 					
 					{/* Columna de imagen */}
 					<div className="flex justify-center md:justify-end">
-						<div className="relative max-w-lg w-full">
-							<div className="relative bg-white rounded-2xl overflow-hidden border border-gray-100">
-								<img 
-									src="/experiencia_onlydance.png" 
-									alt="Experiencia OnlyDance - La ruta de salsa" 
-									className="w-full h-auto"
-								/>
-								<div className="p-6">
-									<div className="flex items-center justify-between mb-3">
-										<h4 className="text-lg font-semibold text-foreground">La ruta de salsa</h4>
-										<Badge variant="secondary" className="bg-green-100 text-green-700">Popular</Badge>
-									</div>
-									<div className="flex items-center gap-4 text-sm text-muted-foreground">
-										<div className="flex items-center gap-1">
-											<Users className="w-4 h-4" />
-											<span>Ana Luna</span>
-										</div>
-										<div className="flex items-center gap-1">
-											<Clock className="w-4 h-4" />
-											<span>1 hora</span>
-										</div>
-									</div>
-									<div className="mt-3 flex items-center justify-between">
-										<span className="text-2xl font-bold text-primary">$80k</span>
-										<span className="text-sm text-muted-foreground">por persona</span>
-									</div>
-								</div>
-							</div>
+						<div className="relative max-w-lg w-full p-8">
+							<img 
+								src="/experiencia_onlydance.png" 
+								alt="Experiencia OnlyDance - La ruta de salsa" 
+								className="w-full h-auto rounded-2xl"
+							/>
 						</div>
 					</div>
 				</div>
