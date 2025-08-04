@@ -142,7 +142,7 @@ const Index = () => {
 					{/* Hero Section */}
 		<section className="relative py-12 md:py-20 hero-pattern overflow-hidden">
 			{/* Background decoration */}
-			<div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5"></div>
+			<div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-white"></div>
 			<div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
 			<div className="absolute bottom-20 left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
 			
