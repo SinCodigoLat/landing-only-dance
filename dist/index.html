@@ -24,17 +24,8 @@
     <meta name="msapplication-TileColor" content="#FB7185" />
     <meta name="theme-color" content="#FB7185" />
 
-    <script>
-      // Redirección temprana a /instructores cuando se visita la raíz
-      (function () {
-        try {
-          var path = window.location.pathname;
-          if (path === '/' || path === '/index.html') {
-            window.location.replace('/instructores');
-          }
-        } catch (e) {}
-      })();
-    </script>
+    <!-- Nota: la redirección a /instructores se maneja server-side (staticwebapp.config.json) para evitar
+         conflictos con Service Workers y navegadores como Safari. -->
 
     <meta property="og:title" content="OnlyDance — Convierte tus clases en experiencias" />
     <meta property="og:description" content="La app para instructores que convierte tus clases en experiencias bien pagadas. Medellín — Clientes listos." />

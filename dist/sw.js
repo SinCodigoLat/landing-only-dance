@@ -38,9 +38,16 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   // Para navegaciones de SPA, devolver siempre index.html (network first)
+  // Para navegaciones SPA: intentar redirección server-side; si falla, devolver index.html
   if (event.request.mode === 'navigate') {
     event.respondWith(
-      fetch('/index.html').catch(() => caches.match('/index.html'))
+      fetch(event.request).then((response) => {
+        // Si el server devuelve 404/500, usar index.html
+        if (!response.ok) {
+          return caches.match('/index.html');
+        }
+        return response;
+      }).catch(() => caches.match('/index.html'))
     );
     return;
   }

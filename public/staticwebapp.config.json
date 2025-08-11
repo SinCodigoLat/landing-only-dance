@@ -1,6 +1,10 @@
 {
   "routes": [
     {
+      "route": "/",
+      "redirect": "/instructores"
+    },
+    {
       "route": "/*.js",
       "headers": {
         "Content-Type": "application/javascript"
